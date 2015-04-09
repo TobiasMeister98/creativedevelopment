@@ -1,49 +1,59 @@
+html
+    height: 100%
+    position: relative
+
 body
-    overflow-y: visible
+    height: 100%
+    width: 100%
     margin: 0
     font-family: 'Open Sans', sans-serif
     background: url("../resources/background.jpg") no-repeat fixed
     background-size: cover
 
-    header
-        padding: 5px 0
-        font-size: 5em
-        font-weight: bold
-        color: #fff
-        text-align: center
-        background-color: #000026
-        box-shadow: 0 0 40px 5px #000
+header
+    position: absolute
+    width: 100%
+    padding: 5px 0
+    font-size: 5em
+    font-weight: bold
+    color: #fff
+    text-align: center
+    background-color: #000026
+    z-index: 1
 
-    main
-        margin: 200px 0
-        padding: 20px 20px 1px
-        background-color: #eee
-        box-shadow: 0 0 40px 5px #000
+main
+    position: relative
+    top: 50%
+    transform: translateY(-45%)
+    padding: 20px 20px 1px
+    background-color: #eee
 
-        section
-            margin-bottom: 20px
-            background: #fff
-            border: 1px solid #ccc
-            border-radius: 5px
+    section
+        background: #fff
+        border: 1px solid #ccc
+        border-radius: 5px
+        margin-bottom: 20px
 
-        h2
-            margin-left: 20px
+    h2
+        margin-left: 20px
 
-        ul
-            list-style: none
+    ul
+        list-style: none
 
-            li:before
-                content: "\2192"
+        li:before
+            content: "\2192"
 
-    footer
-        padding: 5px 0
-        text-align: center
-        background-color: #eee
-        box-shadow: 0 0 40px 5px #000
+footer
+    position: absolute
+    bottom: 0
+    width: 100%
+    padding: 5px 0
+    text-align: center
+    background-color: #eee
 
-        .footer-sub
-            font-size: 0.8em
+    .footer-sub
+        font-size: 0.8em
 
-    a
-        text-decoration: none
-        color: #f00
+a
+    text-decoration: none
+    color: #f00
